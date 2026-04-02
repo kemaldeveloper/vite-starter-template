@@ -6,12 +6,25 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext .ts,.js,.html",
+    "lint:fix": "eslint . --ext .ts,.js,.html --fix",
+    "lint:check": "eslint . --ext .ts,.js,.html --max-warnings 0",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@tailwindcss/vite": "^4.2.2",
     "@trivago/prettier-plugin-sort-imports": "^6.0.2",
     "@types/node": "^25.5.0",
+    "@typescript-eslint/eslint-plugin": "^8.58.0",
+    "@typescript-eslint/parser": "^8.58.0",
+    "eslint": "^10.1.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-html": "^8.1.4",
+    "eslint-plugin-import": "^2.32.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "typescript": "~5.9.3",
@@ -21,5 +34,11 @@
   "dependencies": {
     "flowbite": "^4.0.1",
     "tailwindcss": "^4.2.2"
+  },
+  "lint-staged": {
+    "*.{ts,js,html}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }

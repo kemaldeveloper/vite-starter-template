@@ -1,19 +1,23 @@
-import { resolve } from 'path';
-import { defineConfig } from 'vite';
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from "@tailwindcss/vite";
+import { resolve } from "path";
+import { defineConfig } from "vite";
 
-const __dirname = resolve();
+const root = resolve();
 
 export default defineConfig({
-  // root: '',
-  // base: '/',
+  root: resolve(root, "src"),
+  base: "./",
   plugins: [tailwindcss()],
-  appType: 'mpa',
+  appType: "mpa",
+
   build: {
-    rolldownOptions: {
+    modulePreload: false,
+    outDir: resolve(root, "dist"),
+    emptyOutDir: true,
+    rollupOptions: {
       input: {
-        index: 'index.html',
-        catalog: 'components.html',
+        index: resolve(root, "src/index.html"),
+        components: resolve(root, "src/components.html"),
       },
     },
   },
@@ -21,4 +25,3 @@ export default defineConfig({
     devSourcemap: true,
   },
 });
-
