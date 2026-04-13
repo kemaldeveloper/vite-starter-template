@@ -1835,6 +1835,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"flowbite-typography@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "flowbite-typography@npm:1.0.5"
+  dependencies:
+    lodash.castarray: "npm:^4.4.0"
+    lodash.isplainobject: "npm:^4.0.6"
+    lodash.merge: "npm:^4.6.2"
+  checksum: 10c0/6336c4da1d2be61d3ae3f053d3b732db1b0a8b14c8991b31ca59b58d8eb80d62c96e63511df2c944da034472a26c278d028ed4d6c381e54d500a17dd58869c2f
+  languageName: node
+  linkType: hard
+
 "flowbite@npm:^4.0.1":
   version: 4.0.1
   resolution: "flowbite@npm:4.0.1"
@@ -2668,6 +2679,27 @@ __metadata:
   version: 4.18.1
   resolution: "lodash-es@npm:4.18.1"
   checksum: 10c0/35d4dcf87ef07f8d090f409447575800108057e360b445f590d0d25d09e3d1e33a163d2fc100d4d072b0f901d5e2fc533cd7c4bfd8eeb38a06abec693823c8b8
+  languageName: node
+  linkType: hard
+
+"lodash.castarray@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "lodash.castarray@npm:4.4.0"
+  checksum: 10c0/0bf523ad1596a5bf17869ba047235b4453eee927005013ae152345e2b291b81a02e7f2b7c38f876a1d16f73c34aa3c3241e965193e5b31595035bc8f330c4358
+  languageName: node
+  linkType: hard
+
+"lodash.isplainobject@npm:^4.0.6":
+  version: 4.0.6
+  resolution: "lodash.isplainobject@npm:4.0.6"
+  checksum: 10c0/afd70b5c450d1e09f32a737bed06ff85b873ecd3d3d3400458725283e3f2e0bb6bf48e67dbe7a309eb371a822b16a26cca4a63c8c52db3fc7dc9d5f9dd324cbb
+  languageName: node
+  linkType: hard
+
+"lodash.merge@npm:^4.6.2":
+  version: 4.6.2
+  resolution: "lodash.merge@npm:4.6.2"
+  checksum: 10c0/402fa16a1edd7538de5b5903a90228aa48eb5533986ba7fa26606a49db2572bf414ff73a2c9f5d5fd36b31c46a5d5c7e1527749c07cbcf965ccff5fbdf32c506
   languageName: node
   linkType: hard
 
@@ -3917,6 +3949,7 @@ __metadata:
     eslint-plugin-html: "npm:^8.1.4"
     eslint-plugin-import: "npm:^2.32.0"
     flowbite: "npm:^4.0.1"
+    flowbite-typography: "npm:^1.0.5"
     husky: "npm:^9.1.7"
     lint-staged: "npm:^16.4.0"
     prettier: "npm:^3.8.1"

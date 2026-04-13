@@ -6,8 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vite-starter-template</title>
   </head>
-  <body>
-    <h1>Components</h1>
+  <body class="bg-sky-100">
+    <div class="container">
+      <div class="flex flex-col gap-15 pt-10 pb-100">
+        <h1 class="text-7xl">Components</h1>
+
+        <div class="flex flex-col gap-y-5">
+          <h1>Typography 1</h1>
+          <h2>Typography 2</h2>
+          <h3>Typography 3</h3>
+          <h4>Typography 4</h4>
+          <h5>Typography 5</h5>
+          <h6>Typography 6</h6>
+          <p>Paragraph</p>
+        </div>
+
+        <div class="flex flex-col gap-y-5">
+          <h2 class="text-4xl">Buttons</h2>
+          <div class="flex flex-col gap-y-3">
+            <div class="flex gap-3">
+              <button type="button" class="btn">Default</button>
+              <button type="button" class="btn btn-outline-primary">Inspire me!</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-y-5">
+          <h2 class="text-4xl">Icons</h2>
+          <div class="grid grid-cols-[repeat(8,max-content)] gap-5">
+            <span class="icon-ampoula text-2xl"></span>
+            <span class="icon-arrow-rotate-right text-2xl"></span>
+            <span class="icon-attention text-2xl"></span>
+            <span class="icon-biotech text-2xl"></span>
+            <span class="icon-check text-2xl"></span>
+            <span class="icon-chevron-down-regular text-2xl"></span>
+            <span class="icon-chevron-down-solid text-2xl"></span>
+            <span class="icon-chevron-right text-2xl"></span>
+            <span class="icon-copy text-2xl"></span>
+            <span class="icon-download text-2xl"></span>
+            <span class="icon-fake text-2xl"></span>
+            <span class="icon-handshake text-2xl"></span>
+            <span class="icon-health-safety text-2xl"></span>
+            <span class="icon-info text-2xl"></span>
+            <span class="icon-lab-research text-2xl"></span>
+            <span class="icon-license text-2xl"></span>
+            <span class="icon-mood-heart text-2xl"></span>
+            <span class="icon-package text-2xl"></span>
+            <span class="icon-pin text-2xl"></span>
+            <span class="icon-search text-2xl"></span>
+            <span class="icon-settings-input text-2xl"></span>
+            <span class="icon-task-alt text-2xl"></span>
+            <span class="icon-vaccines text-2xl"></span>
+            <span class="icon-verified text-2xl"></span>
+            <span class="icon-water-drops text-2xl"></span>
+            <span class="icon-xmark-regular text-2xl"></span>
+            <span class="icon-xmark-solid text-2xl"></span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-y-5">
+          <h2 class="text-4xl">Select</h2>
+
+          <form class="max-w-sm">
+            <label for="countries" class="text-heading mb-2.5 block text-sm font-medium">Select an option</label>
+            <select
+              id="countries"
+              class="bg-neutral-secondary-medium border-default-medium text-heading rounded-base focus:ring-brand focus:border-brand placeholder:text-body block w-full border px-3 py-2.5 text-sm shadow-xs"
+            >
+              <option selected>Choose a country</option>
+              <option value="US">United States</option>
+              <option value="CA">Canada</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/ts/main.ts"></script>
   </body>
 </html>

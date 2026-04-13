@@ -1,3 +1,1 @@
-import "../global.css";
-
-console.log("main.ts");
+import "../styles/global.css";

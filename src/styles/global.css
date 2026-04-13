@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "../icomoon/style";
+@import "tailwindcss";
+@plugin "flowbite/plugin";
+@plugin "flowbite-typography";
+@source "../node_modules/flowbite";
+@import "flowbite/src/themes/default";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+
+  --leading-none: 1;
+
+  /* Colors */
+  --color-general-dark: #07080f;
+  --color-main-blue: #02369e;
+  --color-gmp: #ac8b65;
+  --color-main-green: #24a957;
+  --color-blue-800: #003399;
+}
+
+body {
+  @apply font-sans;
+}
+
+@utility container {
+  @apply mx-auto px-5;
+}
+
+@utility btn {
+  @apply cursor-pointer rounded-[50px] border px-5 py-2.25 text-center text-[20px] leading-none font-normal -tracking-[0.03em] transition;
+}
+
+@utility btn-outline-primary {
+  @apply text-main-blue hover:bg-main-blue focus:ring-brand-subtle border-blue-800 bg-white hover:text-white focus:ring-4 focus:outline-none;
+}

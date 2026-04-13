@@ -1,8 +1,0 @@
-@import "tailwindcss";
-@plugin "flowbite/plugin";
-@source "../node_modules/flowbite";
-@import "flowbite/src/themes/default";
-
-@utility container {
-  @apply mx-auto px-5;
-}
